@@ -19,6 +19,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: var(--bluesoft);
 }
 
 .big-header {
@@ -50,19 +51,56 @@ body {
     margin: 0;
 }
 
-.account-button {
-    padding: 16px 26px;
-    border: 0;
-    border-radius: 50rem;
-    background-color: var(--grey);
-    color: var(--navy);
-    font-size: 18px;
-    font-weight: var(--fwmedium);
+.btn-primary{
+    padding: 12px 20px 12px 20px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 16px;
+    font-weight: var(--fwsemibold);
+    border-radius: 50px;
+    border: none;
 }
 
-.account-button:hover,
-.account-button:focus,
-.account-button:active {
-    background-color: var(--grey);
+.btn-secondary{
+    padding: 12px 20px 12px 20px;
+    background-color: var(--darkgrey);
     color: var(--navy);
+    font-size: 16px;
+    font-weight: var(--fwmedium);
+    border-radius: 50px;
+    border: none;
+}
+
+.navbar-nav .nav-item a:hover {
+    color: var(--blue);
+    transition: all 0.3s ease;
+    font-weight: var(--fwsemibold);
+}
+
+.navbar-nav .nav-item a {
+    color: var(--navy);
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-item {
+    padding-right: 25px;
+    padding-left: 25px;
+    font-weight: var(--fwregular);
+}
+
+.navbar-brand{
+    font-weight: var(--fwbold);
+    color: var(--blue);
+    font-size: 28px;
+}
+
+.navbar{
+    --bs-navbar-padding-y: 0;
+}
+
+.cashier-navbar{
+    padding: 30px;
+    background-color: var(--white);
+    border-bottom-right-radius: 26px;
+    border-bottom-left-radius: 26px;
 }
