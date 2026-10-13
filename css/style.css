@@ -61,14 +61,25 @@ body {
     border: none;
 }
 
+.btn-primary:hover{
+    background-color: var(--navy);
+    color: var(--white);
+}
+
 .btn-secondary{
     padding: 12px 20px 12px 20px;
-    background-color: var(--darkgrey);
+    background-color: var(--grey);
     color: var(--navy);
     font-size: 16px;
     font-weight: var(--fwmedium);
     border-radius: 50px;
     border: none;
+}
+
+.btn-secondary:hover{
+    background-color: var(--blue);
+    color: var(--white) !important;
+    transition: all 0.3s ease;
 }
 
 .navbar-nav .nav-item a:hover {
@@ -90,9 +101,10 @@ body {
 
 .navbar-brand{
     font-weight: var(--fwbold);
-    color: var(--blue);
+    color: var(--navy);
     font-size: 28px;
 }
+
 
 .navbar{
     --bs-navbar-padding-y: 0;
