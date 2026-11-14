@@ -112,7 +112,129 @@ body {
 
 .cashier-navbar{
     padding: 30px;
-    background-color: var(--white);
+    background: var(--white);
     border-bottom-right-radius: 26px;
     border-bottom-left-radius: 26px;
+}
+
+.small-copywriting{
+    font-size: 14px;
+    color: var(--navy);
+    font-weight: var(--fwsemibold);
+}
+
+.badge{
+    padding: 8px 16px 8px 16px;
+    background-color: var(--purplesoft);
+    border-radius: 50px;
+    width: 435px;
+}
+
+.badge .icon{
+    float: left;
+    margin-right: 6px;
+}
+
+.badge .small-copywriting{
+    padding-top: 4px;
+    margin: 0;
+}
+
+.big-header{
+    font-weight: var(--fwextrabold);
+    color: var(--navy);
+    font-size: 48px;
+    line-height: 60px;
+    margin: 0;
+}
+
+.primary-copy {
+    font-size: 16px;
+    font-weight: var(--fwregular);
+    line-height: 28px;
+    color: var(--navy);
+    margin: 0;
+}
+
+.mt-70{
+    margin-top: 70px;
+}
+
+.mr10{
+    margin-right: 10px;
+}
+
+.mr30{
+    margin-right: 30px;
+}
+
+.mb10{
+    margin-bottom: 10px;
+}
+
+.mb20{
+    margin-bottom: 20px;
+}
+
+.mb30{
+    margin-bottom: 30px;
+}
+
+.card-brand{
+    width: 227px;
+    height: 110px;
+    border-radius: 16px;
+    background-color: var(--darkgrey2);
+    text-align: center;
+}
+
+.card-brand .logo{
+    height: 50px;
+    margin-top: 30px;
+}
+
+.carousel-wrapper-left{
+    display: flex;
+    height: 110px;
+    animation: ScrollMoveToLeft linear 25s infinite;
+}
+
+.carousel-left{
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    overflow:hidden;
+}
+
+@keyFrames ScrollMoveToLeft {
+    0% {
+        transform: translateX(100%)
+    }
+    to {
+        transform: translateX(0%)
+    }
+}
+
+.carousel-wrapper-right{
+    display: flex;
+    height: 110px;
+    animation: ScrollMoveToRight linear 25s infinite;
+}
+
+.carousel-right{
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    overflow:hidden;
+}
+
+@keyFrames ScrollMoveToRight {
+    0% {
+        transform: translateX(0%)
+    }
+    to {
+        transform: translateX(100%)
+    }
 }
