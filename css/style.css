@@ -207,7 +207,7 @@ body {
     overflow:hidden;
 }
 
-@keyFrames ScrollMoveToLeft {
+@keyframes ScrollMoveToLeft {
     0% {
         transform: translateX(100%)
     }
@@ -230,7 +230,7 @@ body {
     overflow:hidden;
 }
 
-@keyFrames ScrollMoveToRight {
+@keyframes ScrollMoveToRight {
     0% {
         transform: translateX(0%)
     }
