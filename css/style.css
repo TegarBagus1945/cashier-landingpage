@@ -217,6 +217,10 @@ body {
     margin: 0;
 }
 
+.mt-30{
+    margin-top: 30px;
+}
+
 .mt-70{
     margin-top: 70px;
 }
@@ -233,12 +237,24 @@ body {
     margin-bottom: 10px;
 }
 
+.mb16{
+    margin-bottom: 16px;
+}
+
 .mb20{
     margin-bottom: 20px;
 }
 
 .mb30{
     margin-bottom: 30px;
+}
+
+.mb50{
+    margin-bottom: 50px;
+}
+
+.mb60{
+    margin-bottom: 60px;
 }
 
 .mb70{
@@ -270,6 +286,24 @@ body {
     flex-direction: row;
     height: 110px;
     overflow:hidden;
+}
+
+.form-control{
+    border-radius: 50px;
+    border: 0;
+    background-color: var(--white);
+    padding: 12px 20px 12px 20px;
+}
+
+textarea.form-control{
+    border-radius: 16px;
+}
+
+.form-select{
+    border-radius: 50px;
+    border: 0;
+    background-color: var(--white);
+    padding: 12px 20px 12px 20px;
 }
 
 @keyframes ScrollMoveToLeft {
