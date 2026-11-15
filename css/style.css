@@ -51,6 +51,63 @@ body {
     margin: 0;
 }
 
+.features .features-wrapper h3{
+    padding-top: 16px;
+}
+
+.features .features-wrapper .big-feature-card{
+    padding: 30px;
+    border-radius: 16px;
+    background-color: var(--white);
+    padding-bottom: 60px;
+    cursor: pointer;
+}
+
+.features-wrapper:hover .big-feature-card:not(:hover){
+    filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.features .features-wrapper .small-feature-card{
+    padding: 30px;
+    border-radius: 16px;
+    background-color: var(--white);
+    padding-bottom: 30px;
+    cursor: pointer;
+}
+
+.features-wrapper:hover .small-feature-card:not(:hover){
+    filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+.features .features-wrapper .small-feature-card .icon{
+    height: 100px;
+}
+
+.features .features-wrapper .icon{
+    float: left;
+    width: 60px;
+    height: 200px;
+    margin-right: 18px;
+}
+
+.features .features-wrapper .icon img{
+    float: left;
+    width: 60px;
+    height: 60px;
+}
+
+.text-button{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.text-button:hover{
+    text-decoration: underline;
+    color: var(--navy);
+}
+
 .btn-primary{
     padding: 12px 20px 12px 20px;
     background-color: var(--blue);
@@ -156,7 +213,7 @@ body {
     font-size: 16px;
     font-weight: var(--fwregular);
     line-height: 28px;
-    color: var(--navy);
+    color: var(--darkgrey);
     margin: 0;
 }
 
@@ -182,6 +239,10 @@ body {
 
 .mb30{
     margin-bottom: 30px;
+}
+
+.mb70{
+    margin-bottom: 70px;
 }
 
 .card-brand{
