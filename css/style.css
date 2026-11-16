@@ -357,6 +357,67 @@ textarea.form-control{
     transition: all 0.3s ease;
 }
 
+.testimonial-scroll-container {
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    width: 100%;
+}
+
+.testimonial-wrapper {
+    display: flex;
+    flex-shrink: 0;
+    animation: ScrollTestimonial linear 25s infinite;
+}
+
+@keyframes ScrollTestimonial {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.testimonial-card {
+    width: 350px;
+    padding: 30px;
+    border-radius: 16px;
+    background-color: var(--white);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.testimonial-stars {
+    color: #FFC107;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.testimonial-scroll-container:hover .testimonial-wrapper {
+    animation-play-state: paused;
+}
+
+.testimonial-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    z-index: 10;
+}
+
+.testimonial-scroll-container:hover .testimonial-card:not(:hover) {
+    filter: blur(4px);
+    transition: all 0.3s ease;
+}
+
+@keyframes ScrollTestimonial {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
 @keyframes ScrollMoveToLeft {
     0% {
         transform: translateX(100%)
