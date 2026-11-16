@@ -306,6 +306,57 @@ textarea.form-control{
     padding: 12px 20px 12px 20px;
 }
 
+.footer-col-brand {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+    .footer-col-brand {
+        margin-bottom: 0;
+    }
+}
+
+.footer-col-link {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .footer-col-link {
+        margin-bottom: 0;
+    }
+}
+
+.footer-col-contact {
+    margin-bottom: 0;
+}
+
+.footer-title {
+    font-size: 18px;
+}
+
+.footer-social-wrapper {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-divider {
+    margin-top: 70px;
+    margin-bottom: 30px;
+    background-color: var(--grey);
+    opacity: 0.5;
+    border: none;
+    height: 1px;
+}
+
+.footer-copy-text {
+    font-size: 14px;
+}
+
+.footer-section a.primary-copy:hover {
+    color: var(--blue);
+    transition: all 0.3s ease;
+}
+
 @keyframes ScrollMoveToLeft {
     0% {
         transform: translateX(100%)
